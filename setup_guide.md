@@ -54,7 +54,7 @@ Before you begin, ensure you have:
 
 3. **Verify installation:**
    ```bash
-   python test_installation.py
+   python test_installation_simple.py
    ```
 
 ### Step 4: Configure Cursor IDE
@@ -109,8 +109,9 @@ python quick_test.py
 ```
 
 ### Full Installation Test
+Use the simplified verification script:
 ```bash
-python test_installation.py
+python test_installation_simple.py
 ```
 
 ### Manual Cursor Test

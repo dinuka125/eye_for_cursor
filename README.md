@@ -53,7 +53,7 @@ playwright install
 
 ### 5. Test Installation
 ```bash
-python test_installation.py
+python test_installation_simple.py
 ```
 
 ## ⚙️ Cursor Configuration
@@ -166,7 +166,7 @@ The server uses intelligent memory management:
 ### Getting Help
 
 1. Check the logs in the terminal where you started the server
-2. Run `python test_installation.py` to verify setup
+2. Run `python test_installation_simple.py` to verify setup
 3. Check memory usage with `get_memory_usage` tool
 
 ## 📁 Project Structure
@@ -176,8 +176,8 @@ Eye_for_Cursor/
 ├── main.py                    # MCP server entry point
 ├── main_mcp_functions.py      # Core functionality
 ├── requirements.txt           # Python dependencies
-├── test_installation.py      # Installation test script
-├── quick_test.py             # Quick functionality test
+├── test_installation_simple.py # Installation test script
+├── quick_test.py              # Quick functionality test
 ├── setup_guide.md            # Detailed setup instructions
 ├── screenshots/              # Screenshot storage directory
 └── README.md                 # This file
@@ -198,7 +198,52 @@ To update the MCP server:
 
 ## 🤝 Contributing
 
-[Add contribution guidelines here]
+We welcome contributions! Follow these steps to propose changes:
+
+1) Fork and clone
+- Fork the repository on GitHub
+- Clone your fork and create a feature branch
+  - `git checkout -b feat/<short-feature-name>`
+
+2) Local setup
+- Create and activate a virtual environment
+- Install dependencies: `pip install -r requirements.txt`
+- Install Playwright browsers: `playwright install`
+
+3) Make your changes
+- Keep code clear, typed, and well-structured
+- Add or update docstrings where helpful
+- Prefer small, focused commits with clear messages (Conventional Commits recommended:
+  - `feat: ...`, `fix: ...`, `docs: ...`, `refactor: ...`, `test: ...`)
+
+4) Validate your changes
+- Run the quick tests: `python quick_test.py`
+- Run the installation check: `python test_installation_simple.py`
+- Manually verify key flows if applicable (e.g., screenshot capture in Cursor)
+
+5) Update documentation
+- Update `README.md` and/or `setup_guide.md` if behavior or setup changes
+- Add examples where it improves clarity
+
+6) Open a Pull Request
+- Push your branch and open a PR from your fork to `master`
+- Fill in a clear description: what changed, why, and how it was tested
+- Link any related issues
+
+7) Review process
+- Be ready to address review comments
+- Squash or clean up commits if requested
+
+Code style and quality
+- Match existing formatting and naming conventions
+- Avoid introducing linter errors (run locally if you use a linter)
+- Keep functions small and purposeful; add types where possible
+
+Security & privacy
+- Do not commit secrets or credentials
+- Avoid logging sensitive data
+
+By contributing, you agree your code will be licensed under this project’s license.
 
 ---
 
