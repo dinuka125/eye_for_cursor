@@ -1,0 +1,8 @@
+fastmcp
+playwright
+opencv-python
+numpy
+scikit-image
+Pillow
+axe-playwright-python
+psutil

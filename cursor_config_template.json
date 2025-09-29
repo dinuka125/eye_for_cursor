@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "eye-for-cursor": {
+      "command": "python",
+      "args": ["main.py"],
+      "cwd": "C:\\MCP_Servers\\Eye_for_Cursor",
+      "env": {
+        "PYTHONPATH": "C:\\MCP_Servers\\Eye_for_Cursor"
+      }
+    }
+  }
+}
