@@ -1,12 +1,19 @@
 {
   "mcpServers": {
-    "eye-for-cursor": {
-      "command": "python",
-      "args": ["main.py"],
-      "cwd": "C:\\MCP_Servers\\Eye_for_Cursor",
-      "env": {
-        "PYTHONPATH": "C:\\MCP_Servers\\Eye_for_Cursor"
-      }
+    "Eye for Cursor MCP Server": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--with",
+        "fastmcp",
+        "--with-requirements",
+        "C:\\MCP_Servers\\Eye_for_Cursor\\requirements.txt",
+        "fastmcp",
+        "run",
+        "C:\\MCP_Servers\\Eye_for_Cursor\\main.py"
+      ],
+      "env": {},
+      "transport": "stdio"
     }
   }
 }
